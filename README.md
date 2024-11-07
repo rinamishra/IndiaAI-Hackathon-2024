@@ -10,5 +10,5 @@ Team Members:
 3. Khushi Verma, Pursuing B.Tech,Department of Computer Science and Engineering, IIT Jammu
 
 Table of Contents:
-1. #Dataset
-2. EDA of Dataset
+1. # Dataset
+2. # EDA of Dataset
