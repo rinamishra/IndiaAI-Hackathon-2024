@@ -1,176 +1,158 @@
 # IndiaAI-Hackathon-2024
 
+## **Team Name**: Shakti  
 
-Team Name: 
-Shakti
+### **Team Members**:  
+1. **Rina Mishra**: PhD Scholar, Department of Computer Science and Engineering with specialization in Cybersecurity, IIT Jammu  
+2. **Shreya Singh**: MTech Research Assistant, Department of Computer Science and Engineering with specialization in Computer Technology, IIT Jammu  
+3. **Khushi Verma**: B.Tech Student, Department of Computer Science and Engineering, IIT Jammu  
 
-Team Members:
-1. Rina Mishra, PhD Scholar, Department of Computer Science and Engineering with specialization in cybersecurity, IIT Jammu
-2. Shreya Singh, MTech Research Assistant, Department of Computer Science and Engineering with specialization in Computer Technology, IIT Jammu
-3. Khushi Verma, Pursuing B.Tech,Department of Computer Science and Engineering, IIT Jammu
+---
 
-Table of Contents:
-# Dataset
-# Preprocessing Script for Text Data
-This contains a Python script for preprocessing textual data. It includes functionalities for Hinglish to English translation, text cleaning, lemmatization, and abbreviation expansion.
-## Features
-1. **Hinglish to English Translation**  
-   Use Google Sheets to translate Hinglish (or Hindi) to English with the following formula:  
-   ```excel
-   =GoogleTranslate(A2, "hi", "en")
- This ensures accurate English sentences for further processing.
- 
- 2. **Text Cleaning**  
-  - Converts text to lowercase.
-  - Removes:
-      - URLs
-      - Punctuation
-      - Non-word characters
-      - Words containing numbers
-      - Stopwords (based on NLTK's English stopwords list)
-    - Retains meaningful words longer than two characters.
+## **Aim**  
+To develop an NLP model that categorizes complaints based on the victim, type of fraud, and other relevant parameters using advanced text classification techniques.  
 
- 3. **Lemmatization**
-  Applies NLTK's lemmatization to reduce words to their base forms.
+---
 
- 4. **Abbreviation Expansion**
-    Replaces abbreviations with their full forms using a customizable dictionary.
-# Data Analysis
+## **Dataset**  
 
-The dataset posed several challenges, addressed as follows:
+### **Dataset Details**:  
+- **Source**: IndiaAI CyberGuard AI Hackathon  
+- **Format**: CSV file  
+- **Columns**:  
+  - `crimeaditionalinfo`: Additional crime-related information  
+  - `Category`: Main category of crime  
+  - `sub_category`: Sub-category of the crime  
 
-### Key Challenges and Solutions
+---
+
+## **Data Analysis**  
+
+### Key Challenges and Solutions  
 
 1. **Unbalanced Data**  
    - **Issue**: Significant class imbalance, risking biased model training.  
-   - **Example**: Dominant class ("Online Financial Fraud") had 57,434 samples, while minor classes like "Ransomware" had as few as 56 samples.  
+   - **Solution**: Oversampling minor classes using techniques like SMOTE to balance the dataset.  
+   - **Example**:  
+     - Major Class: "Online Financial Fraud" (57,434 samples)  
+     - Minor Class: "Ransomware" (56 samples)  
 
 2. **Mixed Language Content**  
-   - **Issue**: Data in both English and Hinglish created inconsistency.  
-   - **Solution**: Translated Hinglish to English using Google Sheets' `GoogleTranslate` for higher accuracy.
+   - **Issue**: Data contained both English and Hinglish, leading to inconsistencies.  
+   - **Solution**: Translated Hinglish to English using Google Sheets' `GoogleTranslate` function for improved accuracy.  
+   - **Example (Before Translation)**:  
+     ```
+     RUPAY KA RECHARGE PHONE PE SE KARNE KE UPRANT THODI DER BAD ACCOUNT SE PASE KAT CHUKE THE ...
+     ```  
+   - **Example (After Translation)**:  
+     ```
+     After recharging through RuPay on the phone, money was debited from the account shortly after ...
+     ```
 
 3. **Use of Abbreviations**  
-   - **Issue**: Ambiguity from abbreviations.  
-   - **Solution**: Expanded abbreviations using a custom dictionary.
+   - **Issue**: Ambiguity caused by abbreviations.  
+   - **Solution**: Expanded abbreviations using a custom dictionary.  
+   - **Example**:  
+     - `SBI YONO`: State Bank of India You Only Need One  
 
 4. **Noisy Data**  
-   - **Issue**: Included URLs, punctuation, and nonsensical text.  
-   - **Solution**: 
-     - Text cleaning: converted to lowercase, removed links, punctuation, and stopwords, and lemmatized words.
+   - **Issue**: Presence of URLs, punctuation, and nonsensical text.  
+   - **Solution**: Applied text cleaning techniques:
+     - Converted to lowercase
+     - Removed URLs, punctuation, and stopwords
+     - Performed lemmatization.  
 
 5. **Mislabeled and Nonsense Data**  
-   - **Issue**: Incorrect labels and NULL or gibberish entries.  
-   - **Solution**: Removed mislabeled and nonsensical rows.
-
-### Data Cleaning Outcomes
-- **Initial Rows**: 101,179  
-- **Removed Rows**: 1,631  
-- **Final Rows**: 99,548  
-
-This preprocessing ensured a consistent, clean dataset for robust model training.
-
-
-References:
-RoBERTa: A Robustly Optimized BERT Pretraining Approach,  https://arxiv.org/pdf/1907.11692
-
-
-
-# **Development of an NLP Model for Text Analytics and Classification**
-
-## **Problem Statement**
-The objective of this project is to develop an NLP model to automatically categorize complaints based on:
-- **Victim Type**
-- **Type of Fraud**
-- **Other Relevant Parameters**
-
-This solution aims to enhance text classification for handling complaints efficiently, improving processing speed and reliability.
+   - **Issue**: Incorrect labels, NULL values, and gibberish entries.  
+   - **Solution**: Removed mislabeled rows and nonsensical entries to ensure data quality.  
 
 ---
 
-## **Objective**
+## **Development of the NLP Model**  
+
+### **Problem Statement**  
+The objective of this project is to develop an NLP model that automatically categorizes complaints based on:  
+- **Victim Type**  
+- **Type of Fraud**  
+- **Other Relevant Parameters**  
+
+This solution aims to enhance the efficiency and reliability of complaint handling systems by automating text classification.  
+
+---
+
+## **Objectives**  
+
 1. **Text Preprocessing**:
-   - Perform tokenization.
-   - Remove stop words.
-   - Apply stemming or lemmatization for normalization.
-   - Clean the text data by removing special characters, numbers, and other noise.
+   - Tokenization
+   - Removal of stop words
+   - Stemming or lemmatization for normalization
+   - Cleaning text by removing special characters, numbers, and other noise  
 
 2. **Model Development**:
-   - Select, train, and evaluate different NLP models for text classification.
-   - Compare the performance of traditional machine learning models with advanced models like transformers (BERT).
+   - Train and evaluate various models for text classification.
+   - Compare traditional ML models with advanced deep learning models like BERT.  
 
 3. **Performance Evaluation**:
-   - Use metrics like **accuracy**, **precision**, **recall**, and **F1-score** to assess the model's performance.
-   - Visualize the confusion matrix to understand misclassification.
+   - Use metrics like **accuracy**, **precision**, **recall**, and **F1-score**.
+   - Visualize results using confusion matrices and performance charts.  
 
 ---
 
-## **Dataset**
-### Dataset Details:
-- **Source**: [Mention source here]
-- **Format**: CSV file
-- **Columns**:
-  - `Complaint_Text`: The textual content of the complaint.
-  - `Victim_Type`: Labels indicating the type of victim (e.g., Individual, Organization).
-  - `Fraud_Type`: Labels indicating the type of fraud (e.g., Identity Theft, Online Fraud).
-  - Additional metadata fields as needed.
+## **Workflow**  
 
----
+### 1. Exploratory Data Analysis (EDA)  
+- Analyze data for missing values, imbalanced classes, and common patterns.  
+- Visualize data distribution using `matplotlib` and `seaborn`.  
 
-## **Workflow**
-### 1. **Exploratory Data Analysis (EDA)**
-   - Analyze the dataset to identify:
-     - Missing values
-     - Imbalanced classes
-     - Common words and patterns
-   - Visualize the data distribution using libraries like `matplotlib` or `seaborn`.
+### 2. Data Preprocessing  
+- **Steps**:  
+  1. Convert text to lowercase.  
+  2. Tokenize text into words.  
+  3. Remove stop words.  
+  4. Apply stemming or lemmatization.  
+  5. Remove special characters, punctuation, and numbers.  
+- **Tools Used**:  
+  - `NLTK`  
+  - `spaCy`  
+  - `re` (Regular Expressions)  
 
-### 2. **Data Preprocessing**
-   - **Steps**:
-     1. Convert text to lowercase.
-     2. Tokenize text into words.
-     3. Remove stop words (e.g., "and," "the," etc.).
-     4. Apply stemming or lemmatization to reduce words to their root forms.
-     5. Remove special characters, punctuation, and numbers.
-   - **Tools Used**: 
-     - `NLTK`
-     - `spaCy`
-     - `re` (for regular expressions)
+### 3. Model Development  
+- **Models Trained**:  
+  - Logistic Regression  
+  - Naive Bayes  
+  - Support Vector Machines (SVM)  
+  - Random Forest  
+  - BERT/Transformers  
+- **Feature Extraction Methods**:  
+  - Bag-of-Words (BoW)  
+  - TF-IDF  
+  - Word Embeddings (Word2Vec, GloVe)  
+  - Pre-trained embeddings (e.g., BERT).  
 
-### 3. **Model Development**
-   - Train and evaluate the following models:
-     - Logistic Regression
-     - Naive Bayes
-     - Support Vector Machines (SVM)
-     - Random Forest
-     - BERT/Transformers
-   - Use feature extraction methods:
-     - Bag-of-Words (BoW)
-     - TF-IDF
-     - Word Embeddings (e.g., Word2Vec, GloVe)
-     - Pre-trained embeddings for advanced models (e.g., BERT).
+### 4. Model Evaluation  
+- **Metrics Used**:  
+  - Accuracy  
+  - Precision  
+  - Recall  
+  - F1-Score  
+- **Visualization**:  
+  - Confusion matrices  
+  - Bar charts comparing model performances  
 
-### 4. **Model Evaluation**
-   - Metrics Used:
-     - **Accuracy**
-     - **Precision**
-     - **Recall**
-     - **F1-Score**
-   - **Visualization**:
-     - Plot confusion matrices.
-     - Create bar charts comparing model performances.
+### 5. Comparison of Models  
 
-### 5. **Comparison of Models**
 | **Model**               | **Accuracy** | **Precision** | **Recall** | **F1-Score** |
 |-------------------------|--------------|---------------|------------|--------------|
 | Logistic Regression     | 85.0%       | 83.0%         | 84.0%      | 83.5%        |
 | Naive Bayes             | 82.0%       | 80.0%         | 81.0%      | 80.5%        |
 | Support Vector Machine  | 88.0%       | 86.0%         | 87.0%      | 86.5%        |
 | Random Forest           | 87.0%       | 85.0%         | 86.0%      | 85.5%        |
-| BERT                    | 92.0%       | 90.5%         | 91.0%      | 90.7%        |
+| **BERT**                | **92.0%**   | **90.5%**     | **91.0%**  | **90.7%**    |
 
 ---
 
-## **Folder Structure**
+## **Folder Structure**  
+
 ```plaintext
 .
 ├── data/
