@@ -36,71 +36,39 @@ This contains a Python script for preprocessing textual data. It includes functi
  4. **Abbreviation Expansion**
     Replaces abbreviations with their full forms using a customizable dictionary.
 # Data Analysis
-The dataset provided presented several challenges that were addressed through careful preprocessing and cleaning. Below is a summary of the identified challenges and solutions applied:
 
-### Identified Data Challenges
+The dataset posed several challenges, addressed as follows:
+
+### Key Challenges and Solutions
 
 1. **Unbalanced Data**  
-   - **Issue**: The dataset contains a significant class imbalance, leading to biased model training and reduced generalization.  
-   - **Potential Impact**: Models may overfit to the dominant class and underperform on minority classes.  
-   - **Example**:  
-     ```
-     Category                                   Count
-     Online Financial Fraud                    57,434
-     Online and Social Media Related Crime     12,140
-     Any Other Cyber Crime                     10,878
-     Cyber Attack/Dependent Crimes              3,608
-     Rape/Gang Rape/Sexually Abusive Content    2,822
-     Sexually Obscene Material                  1,838
-     Hacking/Computer Damage                    1,710
-     Sexually Explicit Act                      1,552
-     Cryptocurrency Crime                         480
-     Online Gambling/Betting                      444
-     Child Pornography/Abuse Material             379
-     Online Cyber Trafficking                     183
-     Cyber Terrorism                              161
-     Ransomware                                    56
-     Report Unlawful Content                        1
-     ```
+   - **Issue**: Significant class imbalance, risking biased model training.  
+   - **Example**: Dominant class ("Online Financial Fraud") had 57,434 samples, while minor classes like "Ransomware" had as few as 56 samples.  
 
-2. **Mixed Language Content (English and Hinglish)**  
-   - **Issue**: The dataset includes a mix of English and Hinglish, making text interpretation challenging for models.  
-   - **Potential Impact**: May require language normalization or separate pipelines for handling mixed-language text.  
-   - **Solution**: Hinglish text was translated into English using Google Sheets' `GoogleTranslate` function for better consistency and accuracy.
+2. **Mixed Language Content**  
+   - **Issue**: Data in both English and Hinglish created inconsistency.  
+   - **Solution**: Translated Hinglish to English using Google Sheets' `GoogleTranslate` for higher accuracy.
 
 3. **Use of Abbreviations**  
-   - **Issue**: Abbreviations and acronyms introduce ambiguity, as they can have multiple meanings depending on the context.  
-   - **Potential Impact**: Context-aware abbreviation expansion was required to reduce ambiguity.  
-   - **Solution**: Expanded abbreviations using a custom dictionary to replace abbreviations with their full forms.
+   - **Issue**: Ambiguity from abbreviations.  
+   - **Solution**: Expanded abbreviations using a custom dictionary.
 
 4. **Noisy Data**  
-   - **Issue**: The dataset contained random punctuation, special characters, links, stopwords, and redundant or irrelevant text.  
-   - **Potential Impact**: Increased preprocessing complexity and reduced data quality.  
+   - **Issue**: Included URLs, punctuation, and nonsensical text.  
    - **Solution**: 
-     - Converted all text to lowercase.
-     - Removed URLs, punctuation, newline characters, and non-word characters except dots.
-     - Filtered out words containing numbers and stopwords.
-     - Retained meaningful words longer than two characters and applied lemmatization for normalization.
+     - Text cleaning: converted to lowercase, removed links, punctuation, and stopwords, and lemmatized words.
 
-5. **Mislabeled Test Data**  
-   - **Issue**: Incorrectly labeled test samples led to misleading performance metrics.  
-   - **Potential Impact**: Flawed conclusions about model performance.  
-   - **Solution**: Mislabeling was identified and corrected where possible during data cleaning.
-
-6. **Presence of Nonsense Data**  
-   - **Issue**: NULL values, gibberish, and nonsensical text reduced dataset quality.  
-   - **Potential Impact**: Wasted computational resources and negatively affected model training.  
-   - **Examples**:  
-     - **NULL Values**: Line 25 in the training dataset.  
-     - **Gibberish Text**: Random characters and nonsensical entries identified and removed.  
+5. **Mislabeled and Nonsense Data**  
+   - **Issue**: Incorrect labels and NULL or gibberish entries.  
+   - **Solution**: Removed mislabeled and nonsensical rows.
 
 ### Data Cleaning Outcomes
+- **Initial Rows**: 101,179  
+- **Removed Rows**: 1,631  
+- **Final Rows**: 99,548  
 
-- Initial number of rows: **101,179**
-- Problematic rows removed: **1,631**  
-- Final dataset size: **99,548 rows**
+This preprocessing ensured a consistent, clean dataset for robust model training.
 
-By addressing these challenges, the dataset was prepared to support robust and reliable model training and evaluation.
 
 References:
 RoBERTa: A Robustly Optimized BERT Pretraining Approach,  https://arxiv.org/pdf/1907.11692
