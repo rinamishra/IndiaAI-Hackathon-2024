@@ -14,14 +14,12 @@ Table of Contents:
 # Preprocessing Script for Text Data
 This contains a Python script for preprocessing textual data. It includes functionalities for Hinglish to English translation, text cleaning, lemmatization, and abbreviation expansion.
 ## Features
-
-## Features
-
 1. **Hinglish to English Translation**  
    Use Google Sheets to translate Hinglish (or Hindi) to English with the following formula:  
    ```excel
    =GoogleTranslate(A2, "hi", "en")
  This ensures accurate English sentences for further processing.
+ 
  2. **Text Cleaning**  
   - Converts text to lowercase.
   - Removes:
