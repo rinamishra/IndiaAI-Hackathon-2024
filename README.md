@@ -1,6 +1,6 @@
 # IndiaAI-Hackathon-2024
 
-## **Team Name**: Shakti  
+## **Team Name**: SHAKTI  
 
 ### **Team Members**:  
 1. **Rina Mishra**: PhD Scholar, Department of Computer Science and Engineering with specialization in Cybersecurity, IIT Jammu  
