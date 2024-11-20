@@ -11,7 +11,32 @@ Team Members:
 
 Table of Contents:
 # Dataset
-# Preprocessing
+# Preprocessing Script for Text Data
+This contains a Python script for preprocessing textual data. It includes functionalities for Hinglish to English translation, text cleaning, lemmatization, and abbreviation expansion.
+## Features
+
+## Features
+
+1. **Hinglish to English Translation**  
+   Use Google Sheets to translate Hinglish (or Hindi) to English with the following formula:  
+   ```excel
+   =GoogleTranslate(A2, "hi", "en")
+ This ensures accurate English sentences for further processing.
+ 2. **Text Cleaning**  
+  - Converts text to lowercase.
+  - Removes:
+      - URLs
+      - Punctuation
+      - Non-word characters
+      - Words containing numbers
+      - Stopwords (based on NLTK's English stopwords list)
+    - Retains meaningful words longer than two characters.
+
+ 3. **Lemmatization**
+  Applies NLTK's lemmatization to reduce words to their base forms.
+
+ 4. **Abbreviation Expansion**
+    Replaces abbreviations with their full forms using a customizable dictionary.
 # Data Analysis
 
 References:
