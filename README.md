@@ -103,7 +103,8 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 
 ### 1. Exploratory Data Analysis (EDA)  
 - Analyze data for missing values, imbalanced classes, and common patterns.  
-- Visualize data distribution using `matplotlib` and `seaborn`.  
+- Visualize data distribution using `matplotlib` and `seaborn`.
+- Used wordcloud to see the most impactful words in each category. 
 
 ### 2. Data Preprocessing  
 - **Steps**:  
