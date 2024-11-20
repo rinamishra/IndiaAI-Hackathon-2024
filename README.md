@@ -32,7 +32,7 @@ To develop an NLP model that categorizes complaints based on the victim, type of
 
 1. **Unbalanced Data**  
    - **Issue**: Significant class imbalance, risking biased model training.  
-   - **Solution**: Oversampling minor classes using techniques like SMOTE to balance the dataset.  
+   - **Solution**: Oversampling minor classes using techniques like Synthetic Data Generation to balance the dataset.  
    - **Example**:  
      - Major Class: "Online Financial Fraud" (57,434 samples)  
      - Minor Class: "Ransomware" (56 samples)  
