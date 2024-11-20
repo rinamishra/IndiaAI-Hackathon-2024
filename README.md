@@ -61,6 +61,7 @@ To develop an NLP model that categorizes complaints based on the victim, type of
      - Converted to lowercase
      - Removed URLs, punctuation, and stopwords
      - Performed lemmatization.  
+     - Removed 2 length words, which was not contributing much.
 
 5. **Mislabeled and Nonsense Data**  
    - **Issue**: Incorrect labels, NULL values, and gibberish entries.  
@@ -85,7 +86,7 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 1. **Text Preprocessing**:
    - Tokenization
    - Removal of stop words
-   - Stemming or lemmatization for normalization
+   - lemmatization for normalization
    - Cleaning text by removing special characters, numbers, and other noise  
 
 2. **Model Development**:
