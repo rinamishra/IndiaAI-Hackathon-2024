@@ -1,0 +1,23 @@
+Accuracy: 0.5442678588911007
+
+Classification Report:
+                                                     precision    recall  f1-score       support
+Any Other Cyber Crime                                0.226196  0.266091  0.244527   3589.000000
+Child Pornography CPChild Sexual Abuse Material...   0.198238  0.381356  0.260870    118.000000
+Crime Against Women & Children                       0.000000  0.000000  0.000000      4.000000
+Cryptocurrency Crime                                 0.272265  0.648485  0.383513    165.000000
+Cyber Attack/ Dependent Crimes                       0.996838  1.000000  0.998416   1261.000000
+Cyber Terrorism                                      0.002604  0.019608  0.004598     51.000000
+Hacking  Damage to computercomputer system etc       0.129022  0.733449  0.219442    574.000000
+Online Cyber Trafficking                             0.003415  0.081967  0.006557     61.000000
+Online Financial Fraud                               0.917137  0.639761  0.753740  18546.000000
+Online Gambling  Betting                             0.062500  0.137405  0.085919    131.000000
+Online and Social Media Related Crime                0.480697  0.191326  0.273710   4035.000000
+Ransomware                                           0.046875  0.500000  0.085714     18.000000
+RapeGang Rape RGRSexually Abusive Content            1.000000  0.905598  0.950461    911.000000
+Report Unlawful Content                              0.000000  0.000000  0.000000      0.000000
+Sexually Explicit Act                                0.124195  0.257143  0.167494    525.000000
+Sexually Obscene material                            0.152532  0.396024  0.220238    654.000000
+accuracy                                             0.544268  0.544268  0.544268      0.544268
+macro avg                                            0.288282  0.384888  0.290950  30643.000000
+weighted avg                                         0.725953  0.544268  0.605397  30643.000000

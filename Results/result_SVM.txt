@@ -1,0 +1,22 @@
+                                                     precision    recall  f1-score   support
+
+                               Any Other Cyber Crime       0.46      0.28      0.34      3589
+Child Pornography CPChild Sexual Abuse Material CSAM       0.77      0.35      0.48       118
+                      Crime Against Women & Children       0.00      0.00      0.00         4
+                                Cryptocurrency Crime       0.66      0.59      0.62       165
+                      Cyber Attack/ Dependent Crimes       1.00      1.00      1.00      1261
+                                     Cyber Terrorism       0.40      0.04      0.07        51
+      Hacking  Damage to computercomputer system etc       0.42      0.20      0.27       574
+                            Online Cyber Trafficking       0.00      0.00      0.00        61
+                              Online Financial Fraud       0.82      0.94      0.88     18546
+                            Online Gambling  Betting       0.64      0.07      0.12       131
+               Online and Social Media Related Crime       0.56      0.61      0.58      4035
+                                          Ransomware       0.57      0.22      0.32        18
+           RapeGang Rape RGRSexually Abusive Content       1.00      0.91      0.95       911
+                             Report Unlawful Content       0.00      0.00      0.00         0
+                               Sexually Explicit Act       0.66      0.10      0.18       525
+                           Sexually Obscene material       0.55      0.18      0.27       654
+
+                                            accuracy                           0.76     30643
+                                           macro avg       0.53      0.34      0.38     30643
+                                        weighted avg       0.74      0.76      0.74     30643
