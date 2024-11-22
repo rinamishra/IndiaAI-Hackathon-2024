@@ -177,7 +177,7 @@ The "Models" folder does not contain the actual models due to size limitations. 
 [Google Drive - Models](https://drive.google.com/drive/folders/12SHU7rQauIodFaSyHYUnhsHLD9iLzD2A)
 
 The link for submodels is:  
-[Google Drive - Submodels](https://drive.google.com/drive/folders/1-JWpL3xzudw0rQq2VlywmgiFvuxnBYO9)
+[Google Drive - Submodels]( https://drive.google.com/drive/folders/1-JWpL3xzudw0rQq2VlywmgiFvuxnBYO9 )
 
 ## Dataset
 The dataset folder contains a README file that includes the link to the dataset on Google Drive:  
