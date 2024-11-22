@@ -178,9 +178,7 @@ The "Models" folder does not contain the actual models due to size limitations. 
 
 ---
 
-
-
-## References
+## **References**  
 1.  A Complete Process of Text Classification System Using State-of-the-Art NLP Models
 Varun Dogra, 2022.
 2. Cortes, C., & Vapnik, V. (1995). "Support-Vector Networks." Machine Learning, 20, 273–297.
