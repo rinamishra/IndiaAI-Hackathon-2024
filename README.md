@@ -168,8 +168,10 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 │   ├── train_model.py         # Model training script
 │   ├── evaluate.py            # Model evaluation script
 ├── models/
-│   ├── best_model.pkl         # Saved best-performing model
+│   ├── best_model.pkl         # Here, we have added a placeholder for the Google Drive link that contains all the models.
 ├── outputs/
 │   ├── evaluation_report.txt  # Text report of evaluation metrics
 │   ├── confusion_matrix.png   # Confusion matrix visualization
 ├── README.md                  # Project documentation
+
+The "Models" folder does not contain the actual models due to size limitations. However, we have provided a link to a Google Drive folder that contains all the models. You can access the models via the following link: www.sjd.dsggh.
