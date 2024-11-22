@@ -172,16 +172,17 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 ├── README.md                  # Project documentation
 ├── main.py                    # Main pipeline for predicting category and subcategories of crime 
 
-## Models
-The "Models" folder does not contain the actual models due to size limitations. However, we have provided a link to a Google Drive folder that contains all the models. You can access the models via the following link:  
-[Google Drive - Models](https://drive.google.com/drive/folders/12SHU7rQauIodFaSyHYUnhsHLD9iLzD2A)
+# Model and Dataset Information
 
-The link for submodels is:  
-[Google Drive - Submodels]( https://drive.google.com/drive/folders/1-JWpL3xzudw0rQq2VlywmgiFvuxnBYO9 )
+The **"Models"** folder does not contain the actual models due to size limitations. However, we have provided links to access them on Google Drive:
 
-## Dataset
-The dataset folder contains a README file that includes the link to the dataset on Google Drive:  
-[Google Drive - Dataset](https://drive.google.com/drive/folders/1ksuRSVLCyuTiRRI0hE9GxrBpfwMu_AOT)
+- [Download Models](https://drive.google.com/drive/folders/12SHU7rQauIodFaSyHYUnhsHLD9iLzD2A)
+- [Download Submodels](https://drive.google.com/drive/folders/1-JWpL3xzudw0rQq2VlywmgiFvuxnBYO9)
+
+The **"Dataset"** folder contains a `README` file that includes the link to the full dataset. For convenience, you can access the dataset directly via this link:
+
+- [Download Dataset](https://drive.google.com/drive/folders/1ksuRSVLCyuTiRRI0hE9GxrBpfwMu_AOT)
+
 
 ```
 
