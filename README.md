@@ -157,7 +157,7 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 
 ```plaintext
 .
-├── data/
+├── dataset/
 │   ├── complaints.csv         # Raw dataset
 │   ├── preprocessed.csv       # Processed dataset
 ├── notebooks/
