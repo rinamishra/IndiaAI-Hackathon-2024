@@ -175,3 +175,16 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 ├── README.md                  # Project documentation
 
 The "Models" folder does not contain the actual models due to size limitations. However, we have provided a link to a Google Drive folder that contains all the models. You can access the models via the following link: www.sjd.dsggh.
+\
+'''
+## References
+1.  A Complete Process of Text Classification System Using State-of-the-Art NLP Models
+Varun Dogra, 2022.
+2. Cortes, C., & Vapnik, V. (1995). "Support-Vector Networks." Machine Learning, 20, 273–297.
+3. Murphy, K. P. (2012). Machine Learning: A Probabilistic Perspective. MIT Press.
+4. Breiman, L. (2001). "Random Forests." Machine Learning, 45(1), 5–32.
+5. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding." NAACL-HLT 2019.
+6. Conneau, A., et al. (2020). "Unsupervised Cross-lingual Representation Learning at Scale." Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP).
+7. Language Classification: https://github.com/pemistahl/lingua-go
+8. Language Translation: https://github.com/hazzillrodriguez/flask-multi-language
+9.Gupta, P., & Joshi, S. (2018). "Handling Code-Mixed Hindi-English Social Media Data: A Language Identification Perspective." Proceedings of the ACL.
