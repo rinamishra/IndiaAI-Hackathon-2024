@@ -189,3 +189,4 @@ Varun Dogra, 2022.
 7. Language Classification: https://github.com/pemistahl/lingua-go
 8. Language Translation: https://github.com/hazzillrodriguez/flask-multi-language
 9.Gupta, P., & Joshi, S. (2018). "Handling Code-Mixed Hindi-English Social Media Data: A Language Identification Perspective." Proceedings of the ACL.
+
