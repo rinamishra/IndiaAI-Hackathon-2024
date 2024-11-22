@@ -157,26 +157,20 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 
 ```plaintext
 .
-├── dataset/
-│   ├── complaints.csv         # Raw dataset
-│   ├── preprocessed.csv       # Processed dataset
-├── notebooks/
-│   ├── EDA.ipynb              # Exploratory Data Analysis notebook
-│   ├── Model_Comparison.ipynb # Model training and comparison notebook
-├── scripts/
-│   ├── preprocess.py          # Text preprocessing script
-│   ├── train_model.py         # Model training script
-│   ├── evaluate.py            # Model evaluation script
-├── models/
-│   ├── best_model.pkl         # Here, we have added a placeholder for the Google Drive link that contains all the models.
+├── dataset/                    
+│   ├── data.csv               # Here, we have added a placeholder for the Google Drive link that contains all the data.
+├── Train/
+│   ├── train.py               # Training scripts of all the models
+├── Test/
+│   ├── Test.py                # Testing scripts of all the models
+├── Models/
+│   ├── model.pkl              # Here, we have added a placeholder for the Google Drive link that contains all the models.
 ├── Submodels/
-│   ├──          # Here, we have added a placeholder for the Google Drive link that contains all the Submodels.
+│   ├── sub_model.pkl          # Here, we have added a placeholder for the Google Drive link that contains all the Submodels.
 ├── Results/
-│   ├──
-├── outputs/
-│   ├── evaluation_report.txt  # Text report of evaluation metrics
-│   ├── confusion_matrix.png   # Confusion matrix visualization
+│   ├── result/txt             # Result of all the models
 ├── README.md                  # Project documentation
+├── main.py                    # Main pipeline for predicting category and subcategories of crime 
 
 The "Models" folder does not contain the actual models due to size limitations. However, we have provided a link to a Google Drive folder that contains all the models. You can access the models via the following link: (https://drive.google.com/drive/folders/12SHU7rQauIodFaSyHYUnhsHLD9iLzD2A).And the link for submodels is https://drive.google.com/drive/folders/1-JWpL3xzudw0rQq2VlywmgiFvuxnBYO9
 
