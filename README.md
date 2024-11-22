@@ -145,11 +145,11 @@ This solution aims to enhance the efficiency and reliability of complaint handli
 
 | **Model**               | **Accuracy** | **Precision** | **Recall** | **F1-Score** |
 |-------------------------|--------------|---------------|------------|--------------|
-| Logistic Regression     | 85.0%       | 83.0%         | 84.0%      | 83.5%        |
-| Naive Bayes             | 82.0%       | 80.0%         | 81.0%      | 80.5%        |
-| Support Vector Machine  | 88.0%       | 86.0%         | 87.0%      | 86.5%        |
-| Random Forest           | 87.0%       | 85.0%         | 86.0%      | 85.5%        |
-| **BERT**                | **92.0%**   | **90.5%**     | **91.0%**  | **90.7%**    |
+| Logistic Regression     | 77.0%       | 74.0%         | 77.0%      | 73.0%        |
+| Naive Bayes             | 69.0%       | 67.0%         | 69.0%      | 59.0%        |
+| Support Vector Machine  | 76.0%       | 74.0%         | 76.0%      | 74.0%        |
+| Random Forest           | 54.43%      | 72.59%        | 54.43%     | 60.54%       |
+| BERT               | 76.04%      | 73.00%        |74.00%      | 74.00%       |
 
 ---
 
